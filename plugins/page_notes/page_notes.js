@@ -6,7 +6,7 @@
         $axure.player.createPluginHost({
             id: 'pageNotesHost',
             context: 'interface',
-            title: 'NOTES',
+            title: '说明',
             gid: 2
         });
 
@@ -155,16 +155,16 @@
         var pageNotesUi = "<div id='pageNotesHeader'' class='sitemapHeader'>";
 
         pageNotesUi += "<div id='pageNotesToolbar' class='sitemapToolbar'>";
-        pageNotesUi += "<div class='pluginNameHeader'>NOTES</div>";
+        pageNotesUi += "<div class='pluginNameHeader'>说明</div>";
         pageNotesUi += "<div class='pageNameHeader'></div>";
 
         pageNotesUi += "<div class='pageButtonHeader'>";
 
-        pageNotesUi += "<a id='notesPreviousButton' title='Previous Page' class='sitemapToolbarButton prevPageButton'></a>";
-        pageNotesUi += "<a id='notesNextButton' title='Next Page' class='sitemapToolbarButton nextPageButton'></a>";
+        pageNotesUi += "<a id='notesPreviousButton' title='上一页' class='sitemapToolbarButton prevPageButton'></a>";
+        pageNotesUi += "<a id='notesNextButton' title='下一页' class='sitemapToolbarButton nextPageButton'></a>";
         
         if($axure.document.configuration.showAnnotations == true) {
-            pageNotesUi += "<a id='footnotesButton' title='Toggle Footnotes' class='sitemapToolbarButton'></a>";
+            pageNotesUi += "<a id='footnotesButton' title='切换显示或隐藏脚注' class='sitemapToolbarButton'></a>";
         }
 
         pageNotesUi += "</div>";
@@ -174,7 +174,7 @@
 
         pageNotesUi += "<div id='pageNotesScrollContainer'>";
         pageNotesUi += "<div id='pageNotesContainer'>";
-        pageNotesUi += "<div id='pageNotesEmptyState' class='emptyStateContainer'><div class='emptyStateTitle'>No notes for this page.</div><div class='emptyStateContent'>Notes added in Axure RP will appear here.</div><div class='dottedDivider'></div></div>";
+        pageNotesUi += "<div id='pageNotesEmptyState' class='emptyStateContainer'><div class='emptyStateTitle'>此页面没有说明内容。</div><div class='emptyStateContent'>Axure RP 中添加的说明将会出现在这里。</div><div class='dottedDivider'></div></div>";
         pageNotesUi += "<span id='pageNotesContent'></span>";
         pageNotesUi += "</div></div>";
 

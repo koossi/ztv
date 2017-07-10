@@ -7,7 +7,7 @@
         $axure.player.createPluginHost({
             id: 'debugHost',
             context: 'interface',
-            title: 'CONSOLE',
+            title: '调试',
             gid: 3
         });
 
@@ -107,7 +107,7 @@
         var pageNotesUi = "<div id='debugHeader'' class='sitemapHeader'>";
 
         pageNotesUi += "<div id='debugToolbar' class='sitemapToolbar'>";
-        pageNotesUi += "<div class='pluginNameHeader'>CONSOLE</div>";
+        pageNotesUi += "<div class='pluginNameHeader'>调试</div>";
         pageNotesUi += "<div class='pageNameHeader'></div>";
 
         //pageNotesUi += "<div class='pageButtonHeader'>";
@@ -120,16 +120,16 @@
         pageNotesUi += "</div>";
         pageNotesUi += "</div>";
 
-        //var pageNotesUi = "<div id='debugToolbar'><a id='debugVariablesLink' class='debugToolbarButton'>Variables</a> | <a id='debugTraceLink' class='debugToolbarButton'>Trace</a></div>";
+        //var pageNotesUi = "<div id='debugToolbar'><a id='debugVariablesLink' class='debugToolbarButton'>全局变量</a> | <a id='debugTraceLink' class='debugToolbarButton'>Trace</a></div>";
         pageNotesUi += "<div id='debugScrollContainer'>";
         pageNotesUi += "<div id='debugContainer'>";
         pageNotesUi += "<div id='variablesContainer'>";
-        pageNotesUi += "<div id='variablesClearLinkContainer' class='debugLinksContainer'><a id='variablesClearLink' title='Reset Variables'>Reset Variables</a></div>";
+        pageNotesUi += "<div id='variablesClearLinkContainer' class='debugLinksContainer'><a id='variablesClearLink' title='重置全局变量'>重置全局变量</a></div>";
         pageNotesUi += "<div id='variablesDiv'></div></div>";
         pageNotesUi += "<div class='dottedDivider'></div>";
         pageNotesUi += "<div id='traceContainer'>";
-        pageNotesUi += "<div id='traceClearLinkContainer' class='debugLinksContainer'><a id='traceClearLink' title='Clear Trace'>Clear Trace</a></div>";
-        pageNotesUi += "<div id='traceEmptyState' class='emptyStateContainer'><div class='emptyStateTitle'>No interactions in the trace.</div><div class='emptyStateContent'>Triggered interactions will appear here.</div><div class='dottedDivider'></div></div>";
+        pageNotesUi += "<div id='traceClearLinkContainer' class='debugLinksContainer'><a id='traceClearLink' title='Clear Trace'>清除跟踪信息</a></div>";
+        pageNotesUi += "<div id='traceEmptyState' class='emptyStateContainer'><div class='emptyStateTitle'>跟踪信息中没有交互。</div><div class='emptyStateContent'>触发的交互将会出现在这里。</div><div class='dottedDivider'></div></div>";
         pageNotesUi += "<div id='traceDiv'></div></div>";
         pageNotesUi += "</div></div>";
 

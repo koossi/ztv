@@ -74,19 +74,25 @@
         return rootLayer;
     };
 
-    $ax.move.MoveWidget = function (id, x, y, options, to, animationCompleteCallback, shouldFire, jobj, moveInfo) {
+    $ax.move.MoveWidget = function (id, x, y, options, to, animationCompleteCallback, shouldFire, jobj, skipOnMoveEvent) {
+        var moveInfo = $ax.move.RegisterMoveInfo(id, x, y, to, options, jobj);
         $ax.drag.LogMovedWidgetForDrag(id, options.dragInfo);
 
-        if(!moveInfo) moveInfo = _getMoveInfo(id, x, y, to, options, jobj);
+        var object = $obj(id);
+        if(object && $ax.public.fn.IsLayer(object.type)) {
+            var childrenIds = $ax.public.fn.getLayerChildrenDeep(id, true);
+            if(!skipOnMoveEvent) for(var i = 0; i < childrenIds.length; i++) $ax.move.RegisterMoveInfo(childrenIds[i], x, y, to, options);;
+        }
+
+        //if(!moveInfo) moveInfo = _getMoveInfo(id, x, y, to, options, jobj);
 
         jobj = moveInfo.jobj;
 
         _moveElement(id, options, animationCompleteCallback, shouldFire, jobj, moveInfo);
 
+        if(skipOnMoveEvent) return;
         $ax.event.raiseSyntheticEvent(id, "onMove");
-        var object = $obj(id);
-        if(object && $ax.public.fn.IsLayer(object.type)) {
-            var childrenIds = $ax.public.fn.getLayerChildrenDeep(id, true);
+        if(childrenIds) {
             for(var i = 0; i < childrenIds.length; i++) $ax.event.raiseSyntheticEvent(childrenIds[i], 'onMove');
         }
     };
@@ -130,7 +136,7 @@
 
     };
 
-    _move.nopMove = function(id) {
+    _move.nopMove = function(id, options) {
         var moveInfo = new Object();
         moveInfo.x = 0;
         moveInfo.y = 0;
@@ -138,6 +144,11 @@
         moveInfo.options.easing = 'none';
         moveInfo.options.duration = 0;
         widgetMoveInfo[id] = moveInfo;
+
+        // Layer move using container now.
+        var obj = $obj(id);
+        if($ax.public.fn.IsLayer(obj.type)) if(options.onComplete) options.onComplete();
+
         $ax.event.raiseSyntheticEvent(id, "onMove");
     };
 
@@ -219,6 +230,15 @@
             if(fireAnimationQueue) $ax.action.fireAnimationFromQueue(id, $ax.action.queueTypes.move);
             if(completionCallback) completionCallback();
             if(moveInfo.rootLayer) $ax.visibility.popContainer(moveInfo.rootLayer, false);
+            var isPercentWidthPanel = $ax.dynamicPanelManager.isPercentWidthPanel($obj(id));
+            if(isPercentWidthPanel) {
+                $ax.dynamicPanelManager.updatePanelPercentWidth(id);
+                $ax.dynamicPanelManager.updatePanelContentPercentWidth(id);
+            }
+            if(elem.css('position') == 'fixed') {
+                if(!isPercentWidthPanel) elem.css('left', '');
+                elem.css('top', '');
+            }
         };
 
         var rotation = { degree: 0 };

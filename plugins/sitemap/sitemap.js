@@ -30,7 +30,7 @@ function openPreviousPage() {
         $axure.player.createPluginHost({
             id: 'sitemapHost',
             context: 'interface',
-            title: 'PAGES',
+            title: '页面',
             gid: 1
         });
 
@@ -152,7 +152,7 @@ function openPreviousPage() {
         }).focusout(function() {
             if($(this).val() == '') {
                 $(this).addClass('searchBoxHint');
-                $(this).val('Search');
+                $(this).val('输入页面名称关键字进行查找');
             }
         });
 
@@ -385,17 +385,17 @@ function openPreviousPage() {
     function generateSitemap() {
         var treeUl = "<div id='sitemapHeader'' class='sitemapHeader'>";
         treeUl += "<div id='sitemapToolbar' class='sitemapToolbar'>";
-        treeUl += "<div class='pluginNameHeader'>PAGES</div>";
+        treeUl += "<div class='pluginNameHeader'>页面</div>";
         treeUl += "<div class='pageNameHeader'></div>";
 
         treeUl += "<div class='pageButtonHeader'>";
 
         if($axure.document.configuration.enabledViewIds.length > 0) {
-            treeUl += "<a id='adaptiveButton' title='Select Adaptive View' class='sitemapToolbarButton'></a>";
+            treeUl += "<a id='adaptiveButton' title='选择自适应视图' class='sitemapToolbarButton'></a>";
         }
 
-        treeUl += "<a id='linksButton' title='Get Links' class='sitemapToolbarButton'></a>";
-        treeUl += "<a id='highlightInteractiveButton' title='Highlight interactive elements' class='sitemapToolbarButton'></a>";
+        treeUl += "<a id='linksButton' title='获取链接' class='sitemapToolbarButton'></a>";
+        treeUl += "<a id='highlightInteractiveButton' title='高亮显示有交互的元件' class='sitemapToolbarButton'></a>";
         treeUl += "</div>";
         
         treeUl += "</div>";
@@ -406,20 +406,20 @@ function openPreviousPage() {
 
         //linkcontainer
         treeUl += "<div id='sitemapLinksContainer' class='sitemapLinkContainer'>";
-        treeUl += "<div style='margin-bottom:10px;'>Generate sharable URLs</div>";
+        treeUl += "<div style='margin-bottom:10px;'>生成页面的共享连接（URL）</div>";
         treeUl += "<input id='sitemapLinkWithPlayer' type='text' class='sitemapLinkField'/>";
         treeUl += "<div class='sitemapOptionContainer'>";
-        treeUl += "<div><label><input type='radio' name='sitemapToggle' value='withoutmap'/>Without Sidebar</label></div>";
-        treeUl += "<div style='margin-top:10px;'><label><input type='radio' name='sitemapToggle' value='withmap'/>With Sidebar</label>";
+        treeUl += "<div><label><input type='radio' name='sitemapToggle' value='withoutmap'/>取消工具栏</label></div>";
+        treeUl += "<div style='margin-top:10px;'><label><input type='radio' name='sitemapToggle' value='withmap'/>加载工具栏</label>";
 
         treeUl += "<div id='sitemapOptionsDiv'>";
-        treeUl += "<div class='sitemapUrlOption'><label><input type='checkbox' id='minimizeBox' />Minimize sidebar</label></div>";
-        treeUl += "<div class='sitemapUrlOption'><label><input type='checkbox' id='collapseBox' />Pages closed</label></div>";
+        treeUl += "<div class='sitemapUrlOption'><label><input type='checkbox' id='minimizeBox' />最小化工具栏</label></div>";
+        treeUl += "<div class='sitemapUrlOption'><label><input type='checkbox' id='collapseBox' />关闭全部页面</label></div>";
         if($axure.document.configuration.showAnnotations == true) {
-            treeUl += "<div class='sitemapUrlOption'><label><input type='checkbox' id='footnotesBox' />Hide footnotes</label></div>";
+            treeUl += "<div class='sitemapUrlOption'><label><input type='checkbox' id='footnotesBox' />隐藏脚注提示</label></div>";
         }
 
-        treeUl += "<div class='sitemapUrlOption'><label><input type='checkbox' id='highlightBox' />Highlight interactive elements</label></div>";
+        treeUl += "<div class='sitemapUrlOption'><label><input type='checkbox' id='highlightBox' />高亮显示有交互的元件</label></div>";
 
         if($axure.document.configuration.enabledViewIds.length > 0) {
             treeUl += "<div id='viewSelectDiv' class='sitemapUrlOption'><label>View: <select id='viewSelect'></select></label></div>";
