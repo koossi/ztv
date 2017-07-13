@@ -88,7 +88,7 @@
 #u89 {
   position:absolute;
   left:2px;
-  top:2px;
+  top:3px;
   width:796px;
   word-wrap:break-word;
 }
@@ -338,7 +338,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:29px;
+  width:30px;
   white-space:nowrap;
 }
 #u108_div {
@@ -355,7 +355,7 @@
   -webkit-box-shadow:none;
   box-shadow:none;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -368,7 +368,7 @@
   width:69px;
   height:39px;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -431,7 +431,7 @@
   -webkit-box-shadow:none;
   box-shadow:none;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -444,7 +444,7 @@
   width:69px;
   height:39px;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -509,7 +509,7 @@
   -webkit-box-shadow:none;
   box-shadow:none;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -522,7 +522,7 @@
   width:69px;
   height:39px;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -587,7 +587,7 @@
   -webkit-box-shadow:none;
   box-shadow:none;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -600,7 +600,7 @@
   width:69px;
   height:39px;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -665,7 +665,7 @@
   -webkit-box-shadow:none;
   box-shadow:none;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -678,7 +678,7 @@
   width:69px;
   height:39px;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -743,7 +743,7 @@
   -webkit-box-shadow:none;
   box-shadow:none;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -756,7 +756,7 @@
   width:69px;
   height:39px;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -919,7 +919,7 @@
   -webkit-box-shadow:none;
   box-shadow:none;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -932,7 +932,7 @@
   width:50px;
   height:50px;
   font-family:'FontAwesome';
-  font-weight:400;
+  font-weight:403;
   font-style:normal;
   font-size:20px;
   color:#FFFFFF;
@@ -1017,7 +1017,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:29px;
+  width:30px;
   white-space:nowrap;
 }
 #u146_img {
@@ -1055,8 +1055,8 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
@@ -1068,8 +1068,8 @@
   top:85px;
   width:85px;
   height:39px;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
@@ -1133,8 +1133,8 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
@@ -1146,8 +1146,8 @@
   top:157px;
   width:85px;
   height:39px;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
@@ -1211,8 +1211,8 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
@@ -1224,8 +1224,8 @@
   top:229px;
   width:85px;
   height:39px;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
@@ -1289,8 +1289,8 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
@@ -1302,8 +1302,8 @@
   top:308px;
   width:85px;
   height:39px;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
@@ -1367,8 +1367,8 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
@@ -1380,8 +1380,8 @@
   top:380px;
   width:85px;
   height:39px;
-  font-family:'微软雅黑';
-  font-weight:400;
+  font-family:'微软雅黑 Regular', '微软雅黑';
+  font-weight:403;
   font-style:normal;
   font-size:12px;
   color:#FFFFFF;
